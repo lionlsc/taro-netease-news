@@ -1,0 +1,95 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\lionlsc\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add news-item.scss --silent --no-progress
+
+PATH: 
+  "C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jdk1.8.0_201\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath";C:\Program Files\Microsoft MPI\Bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\System32\OpenSSH\;E:\c\bin;E:\perl\site\bin;E:\perl\bin;D:\Git\cmd;D:\Git\bin;D:\mongodb\bin;D:\test\living\ffmpeg-20190205-8522d21-win64-static\bin;D:\Python;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jdk1.8.0_201\jre\bin;D:\AndroidSdk\tools;D:\AndroidSdk\platform-tools;D:\AndroidSdk\platforms;D:\apache-maven-3.6.0\bin;C:\Program Files\Java\jdk1.8.0_201\bin;D:\apache-tomcat-9.0.16\bin;C:\Program Files\Java\jdk1.8.0_201;D:\aDownload\mysql-5.7.25-winx64\bin;D:\AndroidSdk\platform-tools;C:\Users\lionlsc\AppData\Local\Yarn\bin;C:\Program Files\nodejs\;D:\Program Files\apache-tomcat-9.0.17\bin;D:\Program Files\npm;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;D:\Program Files\flutter\bin;C:\Program Files (x86)\scala\bin;C:\Program Files (x86)\sbt\bin;C:\Program Files\TortoiseGit\bin;D:\Program Files\Bento4-SDK-1-5-1-628.x86-microsoft-win32-vs2010\bin;D:\Program Files\ffmpeg-20190607-1e7a8b9-win64-static\bin;D:\Program Files\x264;C:\Users\lionlsc\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Java\jdk1.8.0_201\jre\bin;;D:\Program Files\Fiddler;C:\Users\lionlsc\AppData\Roaming\npm;D:\Program Files\GPAC
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  10.15.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/news-item.scss: Not found
+      at Request.params.callback [as _callback] (C:\Users\lionlsc\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66058:18)
+      at Request.self.callback (C:\Users\lionlsc\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:129541:22)
+      at Request.emit (events.js:189:13)
+      at Request.<anonymous> (C:\Users\lionlsc\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:130513:10)
+      at Request.emit (events.js:189:13)
+      at IncomingMessage.<anonymous> (C:\Users\lionlsc\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:130435:12)
+      at Object.onceWrapper (events.js:277:13)
+      at IncomingMessage.emit (events.js:194:15)
+      at endReadableNT (_stream_readable.js:1125:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "taro-netease-news",
+    "version": "1.0.0",
+    "private": true,
+    "description": "taro仿网易新闻",
+    "main": "index.js",
+    "scripts": {
+      "build:weapp": "taro build --type weapp",
+      "build:swan": "taro build --type swan",
+      "build:alipay": "taro build --type alipay",
+      "build:tt": "taro build --type tt",
+      "build:h5": "taro build --type h5",
+      "build:rn": "taro build --type rn",
+      "dev:weapp": "npm run build:weapp -- --watch",
+      "dev:swan": "npm run build:swan -- --watch",
+      "dev:alipay": "npm run build:alipay -- --watch",
+      "dev:tt": "npm run build:tt -- --watch",
+      "dev:h5": "npm run build:h5 -- --watch",
+      "dev:rn": "npm run build:rn -- --watch"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+      "@tarojs/components": "1.2.21",
+      "@tarojs/router": "1.2.21",
+      "@tarojs/taro": "1.2.21",
+      "@tarojs/taro-alipay": "1.2.21",
+      "@tarojs/taro-h5": "1.2.21",
+      "@tarojs/taro-swan": "1.2.21",
+      "@tarojs/taro-tt": "1.2.21",
+      "@tarojs/taro-weapp": "1.2.21",
+      "@tarojs/rn-runner": "1.2.21",
+      "@tarojs/mobx": "1.2.21",
+      "@tarojs/mobx-h5": "1.2.21",
+      "@tarojs/mobx-rn": "1.2.21",
+      "mobx": "4.8.0",
+      "nervjs": "^1.3.9",
+      "nerv-devtools": "^1.3.9"
+    },
+    "devDependencies": {
+      "@types/react": "16.3.14",
+      "@types/webpack-env": "^1.13.6",
+      "@tarojs/plugin-babel": "1.2.21",
+      "@tarojs/plugin-csso": "1.2.21",
+      "@tarojs/plugin-sass": "1.2.21",
+      "@tarojs/plugin-uglifyjs": "1.2.21",
+      "@tarojs/webpack-runner": "1.2.21",
+      "babel-plugin-transform-class-properties": "^6.24.1",
+      "babel-plugin-transform-decorators-legacy": "^1.3.4",
+      "babel-plugin-transform-jsx-stylesheet": "^0.6.5",
+      "babel-plugin-transform-object-rest-spread": "^6.26.0",
+      "babel-preset-env": "^1.6.1",
+      "babel-eslint": "^8.2.3",
+      "eslint": "^4.19.1",
+      "eslint-config-taro": "1.2.21",
+      "eslint-plugin-react": "^7.8.2",
+      "eslint-plugin-import": "^2.12.0",
+      "eslint-plugin-taro": "1.2.21"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

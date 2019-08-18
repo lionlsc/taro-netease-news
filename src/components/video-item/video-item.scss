@@ -1,0 +1,20 @@
+.item-container{
+  display: flex;
+  height: 500px;
+  position: relative;
+  .video-title{
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+  }
+  .video-icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2000;
+  }
+}
