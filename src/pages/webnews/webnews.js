@@ -5,7 +5,7 @@ class WebNews extends Component {
     super(props)
   }
   config = {
-    navigationBarTitleText:'新闻详情'/*this.$router.title*/
+    navigationBarTitleText:'新闻详情'
   }
   componentWillMount() {}
   componentDidMount() {
